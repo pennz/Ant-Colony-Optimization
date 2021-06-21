@@ -13,7 +13,21 @@ In the above example:
 - 76 is the ant system size
 - _Demo is the suffix for the log file
 
+The example output:
+```
+Jun 21, 2021 8:11:46 AM Algorithm.MaxMin main
+SEVERE: runtime: 1219515
+```
+You can also see the log in the "MMLog_Demo" file.
+And you can see another output file "e1l76MM-bf.csv".
+
+And the csv file format:
+epoch,mm(GSL(Global Shortest Length, branchingFactor for the ant system)
+
+For the branching factor, please refer to the thesis: Dekel_Viner_ant_colony_optimization_bachelor_thesis.pdf
+
 # Walk through the code
+tsp problem, 
 
 ## Log
 ## tsp
@@ -26,3 +40,6 @@ mainly the AntSystemArgs
 Need to abstract from the problem domain.
 But from what we can see, it still use some problem domain features in the
 algorithm codes.
+
+# References
+[MinMax Ant Orignal Paper](https://www.cs.ubc.ca/~hoos/Publ/fgcs00.pdf)
