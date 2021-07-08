@@ -76,7 +76,7 @@ public class MaxMin extends baseAntSystem {
 				trail[j][i] = trail[i][j];
 				//l.logger.log(Level.SEVERE, "trail: " + i + ", " + j + "          "+ trail[i][j]);
 				delta[i][j] = 0;
-				delta[j][i] = delta[i][j];
+				delta[j][i] = delta[i][j]; // here the delta is cleared too
 			}
 		}
 	}
